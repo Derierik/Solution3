@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="text/typescript" href="assets/js/script.js">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="back-card">
+      <div class="black"></div>
+      <div class="sec-code"><p>000</p></div>
+    </div>
+    <div class="front-card">
+      <div class="top-card">
+        <img src="images/card-logo.svg" alt="">
+      </div>
+      <div class="card-num">
+        0000 0000 0000 0000
+      </div>
+      <div class="bottom">
+        <div class="own-name">
+          Jane Appleseed
+        </div>
+        <div class="exp-date">
+          <div class="month">
+            00
+          </div>
+          <p>/</p>
+          <div class="year">
+            00
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="card-form">
+      <form action="">
+        <label for="CardHolderName">CARDHOLDER NAME: </label>
+        <input type="text" id="CardHolderName" placeholder="John Doe">
+        <label for="CardNumber">CARD NUMBER: </label>
+        <input type="text" id="CardNumber" placeholder="0000 0000 0000 0000">
+        <label for="CardDetail">EXP. DATE (MM/YY)</label>
+        <label for="CardCode">CVC</label>
+        <div class="card-dt">
+          <input type="text" id="CardDetail" placeholder="MM">
+          <input type="text" placeholder="YY">
+          <input type="text" id="CardCode" placeholder="123">
+        </div>
+      </form>
+      <button>Confirm</button>
+    </div>
+  </main>
+
+  <!-- Completed state start -->
+
+  <div class="after-message">
+    Thank you!
+    We've added your card details
+    Continue
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">matidev.js</a>.
+  </div>
+</body>
+</html>
